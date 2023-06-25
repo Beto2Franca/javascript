@@ -13,13 +13,14 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            border-radius: 30px
         }
     </style>
 
 </head>
 <body>
 
-    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
 
         interaja...
 
@@ -31,12 +32,19 @@
 
             var a = window.document.getElementById('area')
             a.innerText = 'clicou!'
+            a.style.background = 'red'
         }
 
 
         function entrar(){
             var a = window.document.getElementById('area')
             a.innerText = 'Entrou!'
+        }
+        function sair(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+            
         }
 
     </script>
