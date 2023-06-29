@@ -1,4 +1,4 @@
-var país = 'Italia'
+var país = 'Brasil'
 console.log(`Vivendo em ${país}`)
 
 if (país == 'Brasil'){

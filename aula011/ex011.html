@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bem vindos!</h1>
+
+        <form action="" method="get" autocomplete="on">
+            
+                <label for="">Qual o seu país?</label>
+            
+                
+                <select name="pais" id="ipais">
+                    
+                    <option value="" selected>---Escolha---</option>
+
+                    <optgroup label="Parte 01">
+                        <option value="br">Brasil</option>
+                        <option value="cl">Chile</option>
+                        <option value="co">Colômbia</option>
+                        <option value="ec">Equador</option>
+                    </optgroup>
+            
+                    <optgroup label="Parte 02">
+                        <option value="bo">Bolívia</option>
+                        <option value="gh">Gana</option>
+                        <option value="ca">Canadá</option>
+                        <option value="qa">Catar</option>
+                    </optgroup>
+            
+                </select>
+
+                <input type="button" value="Enviar" onclick="enviar()">
+                <input type="reset" value="Apagar">
+        </form>
+        <div id="res"></div>
+
+        <script>
+
+            function enviar(){
+            var epais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+
+            var pais = (epais.value)
+
+            if (pais == 'br'){
+                res.innerHTML = 'Você é Brasileiro(a)!'
+    
+            }else{
+                res.innerHTML = 'Você é Estrangeiro(a)!'
+            }
+
+                res.innerHTML += '<p>Seja bem vindo(a)!</p>'
+            
+            }
+
+
+        </script>
+</body>
+</html>
