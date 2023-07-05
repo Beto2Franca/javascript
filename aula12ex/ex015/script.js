@@ -10,7 +10,7 @@ function verificar(){
     }
     else{
         var fsex = document.getElementsByName('radsex')
-        var idade = ano -Number(fano.value)
+        var idade = ano - Number(fano.value)
         // res.innerHTML = `Sua idade é de ${idade}` 
         var gênero = ''
 
@@ -53,11 +53,11 @@ function verificar(){
             }
         }
 
-
+       
         res.style.textAlign = 'center' //centraliza o texto
        
-        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
-
+        res.innerHTML = `<p>Detectamos ${gênero} com ${idade} anos.</p>`
         res.appendChild(img)
+
     }
 }
