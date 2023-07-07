@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
         <header>
-            <h1>Título</h1>
+            <h1>Tabuada</h1>
         </header>
 
 
         <section>
-            <div class="opa">
-                testando
+            <div>
+
+               <p>
+                   <label for="inum">Número:</label> <input type="number" name="num" id="inum">
+                   <input type="button" value="Gerar tabuada" onclick="tabuada()">
+               </p>
+
             </div>
 
             <div>
-                Opa!
+               <select name="tabuada" id="seltab" size="10">
+               <option value="">Digite um Número acima</option>
+                
+               </select>
             </div>
+
+
         </section>
 
         <footer>
