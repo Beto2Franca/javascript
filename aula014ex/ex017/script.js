@@ -1,4 +1,5 @@
 function tabuada(){
+
     let num = document.getElementById('inum')
     let tab = document.getElementById('seltab')
     if (num.value.length == 0){
@@ -17,7 +18,7 @@ function tabuada(){
             // mas para o JavaScript não é preciso.
 
             tab.appendChild(item)
-            c++
+             c++  // c = c + 1
 
         }
     }
