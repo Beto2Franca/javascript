@@ -7,7 +7,7 @@ console.log(num)
 console.log(`Nosso Vetor tem ${num.length} posições`)
 console.log(`O primeiro valor do vetor é ${num[0]}`)
 
-let pos = num.indexOf(4)
+let pos = num.indexOf(8)
 if(pos== -1){
     console.log(`O Valor não foi encontrado`)
 }else{
