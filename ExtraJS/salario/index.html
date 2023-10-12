@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento salarial</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            margin-top: 10px;
+        }
+        div{
+            margin-top: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            
+        }
+        label, input{
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aumento de salário</h1>
+    <p>Digite seu salário no campo a baixo e vejo o reajuste.</p>
+
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="sal">Digite o seu salário:</label>
+        <input type="number" name="salario" id="sal">
+
+       
+    </form>
+
+    <section>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">Seu novo salário...</div>
+    </section>
+
+    <script src="salario.js"></script>
+</body>
+</html>
