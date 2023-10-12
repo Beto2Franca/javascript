@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>O Boteco</title>
+</head>
+
+<body>
+    <header>
+        <h1>O Boteco</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Conheça os nossos pratos</h2>
+        <h3>O Boteco</h3>
+
+        <section id="pratos">
+            <div>
+                <h4>Hamburguer</h4>
+                <p>1 - Vegan</p>
+                <p>2 - Carne</p>
+            </div>
+
+            <div>
+                <h4>Petiscos</h4>
+                <p>3 - Fritas</p>
+                <p>4 - Coxinha</p>
+            </div>
+            <div>
+                <h4>Drinks</h4>
+                <p>5 - Caipirinha</p>
+                <p>6 - Moscow Mule</p>
+            </div>
+            <div>
+                <h4>Bebidas</h4>
+                <p>7 - Cerveja</p>
+                <p>8 - Chopp</p>
+            </div>
+
+
+        </section>
+
+        <section class="ver">
+
+            <label for="numero">Dige um dos numeros acima e veja os pratos, bebidas, etc.</label>
+            <input type="number" name="num" id="numero" min="1" max="8">
+
+            <input type="button" value="Verificar" onclick="verificar()" id="botao">
+            
+          
+        </section>
+
+        <section>
+            <div id="res">
+              
+            </div>
+
+            <img id="img" src="/extraswitch/image/veja_prato.png" alt="">
+          
+        </section>
+
+
+    </main>
+
+    <footer>&copy; Beto França</footer>
+
+
+    <script src="boteco.js"></script>
+    
+</body>
+
+</html>
